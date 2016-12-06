@@ -1,0 +1,437 @@
+/* Sessions CSS */
+/*  ***************************
+/*  Media queries
+/*  ---------------------------
+*******************************/
+/* Variable SCSS */
+.hero-wrapper {
+  background: url("../../../src/images/header-bg-only.jpg") top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 556px;
+  overflow: hidden;
+  color: #fff;
+}
+.hero-wrapper .hero-iphone {
+  display: none;
+  position: absolute;
+  left: 166px;
+  top: 120px;
+  width: 221px;
+  height: 403px;
+  background: url("../../../src/images/iphone_main.png") center no-repeat;
+  background-size: 221px 403px;
+}
+.hero-wrapper .hero-iphone .hero-video {
+  position: relative;
+  left: 34px;
+  top: 75px;
+  width: 151px;
+  height: 250px;
+  background: #fff;
+}
+.hero-wrapper .hero-content {
+  margin: 110px 0 0 30px;
+  float: left;
+  position: relative;
+}
+.hero-wrapper .hero-content .top-of-title {
+  width: 460px;
+}
+.hero-wrapper .hero-content .download-buttons-container {
+  margin: 30px 0 0 0;
+  position: relative;
+  text-align: center;
+}
+.hero-wrapper .hero-content .download-buttons-container .button-style {
+  display: inline-block;
+  background-color: #cf102d;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 3px solid #ba0d27;
+  padding: 10px 36px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.hero-wrapper .hero-content .headline {
+  font-weight: 700;
+  margin-top: -30px;
+  font-size: 24px;
+  text-shadow: 2px 2px 1px #333;
+  text-align: center;
+}
+.hero-wrapper .hero-content .join {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+.hero-wrapper .players-div {
+  width: 100%;
+  min-height: 255px;
+  margin: 20px 0 0 0;
+  padding: 20px 0 8px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hero-wrapper .players-div .title-p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  margin: 20px 10px;
+}
+.hero-wrapper .players-div .title-p span {
+  color: #b90721;
+}
+.hero-wrapper .players-div .box-div--content {
+  padding: 10px;
+}
+.hero-wrapper .players-div .player {
+  width: 335px;
+  height: 170px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.hero-wrapper .players-div .player .video-part {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  z-index: -9999;
+  background-color: #000;
+}
+.hero-wrapper .players-div .player .video-part img {
+  width: 335px;
+  height: 170px;
+  opacity: 0.5;
+}
+.hero-wrapper .players-div .player .player-portrait {
+  background-image: url("../../../src/images/image-3.png");
+  position: absolute;
+  float: left;
+  left: 17px;
+  top: 107px;
+  display: block;
+  overflow: hidden;
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  border: 1px solid #fff;
+  z-index: 100;
+  background-size: cover;
+}
+.hero-wrapper .players-div .player .player-name {
+  position: absolute;
+  left: 71px;
+  top: 106px;
+  float: left;
+  display: block;
+  overflow: hidden;
+  color: white;
+  z-index: 100;
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  .hero-wrapper .hero-iphone {
+    display: block;
+  }
+  .hero-wrapper .hero-content {
+    margin: 110px 0 0 475px;
+  }
+  .hero-wrapper .hero-content .join {
+    margin: 0 0 0 25px;
+  }
+  .hero-wrapper .players-div {
+    margin: 70px 0 0 0;
+  }
+  .hero-wrapper .players-div .box-div--content {
+    padding: 0;
+  }
+}
+
+.download-wrapper {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  min-height: 40px;
+  background: #000000;
+  color: white;
+  padding: 20px 15px 60px 15px;
+}
+.download-wrapper .download-buttons-container {
+  text-align: center;
+  padding: 10px;
+}
+.download-wrapper .show-talent {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+.download-wrapper .red-text {
+  color: #cf102d;
+}
+.download-wrapper .button-style {
+  display: inline-block;
+  background-color: #cf102d;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 3px solid #ba0d27;
+  padding: 10px 36px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 992px) {
+  .download-wrapper {
+    padding: 15px 0px;
+  }
+  .download-wrapper .download-buttons-container {
+    padding: 0;
+  }
+}
+
+.app-wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: 448px;
+  margin: 0 0 30px 0;
+  background: #ffffff;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+}
+.app-wrapper .title-div {
+  text-align: center;
+  padding: 80px 0 0 0;
+}
+.app-wrapper .title-red {
+  color: #bb072a;
+  font-weight: 300;
+  font-size: 18px;
+}
+.app-wrapper .title-black {
+  color: #0f0506;
+}
+.app-wrapper #how-it-works {
+  overflow: hidden;
+  margin: 0 -15px;
+}
+.app-wrapper #how-it-works .step {
+  text-align: center;
+}
+.app-wrapper #how-it-works .img {
+  vertical-align: middle;
+}
+.app-wrapper #how-it-works .iphone {
+  width: 240px;
+  height: 400px;
+}
+.app-wrapper #how-it-works .red-dot {
+  color: white;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  display: inline-block;
+  background: #cf102d;
+  border-radius: 70px;
+}
+.app-wrapper #how-it-works .span {
+  padding: 10px 0;
+}
+.app-wrapper #how-it-works .grey {
+  color: #666;
+  padding: 50px;
+  font-size: 14px;
+}
+.app-wrapper #how-it-works .arrow1, .app-wrapper #how-it-works .arrow2 {
+  position: absolute;
+  left: 5px;
+  top: 230px;
+  width: 30px;
+  height: 30px;
+}
+.app-wrapper #how-it-works .arrow2 {
+  left: 20px;
+}
+.app-wrapper #how-it-works .iphone-txt {
+  margin: 0 0 0 15px;
+}
+
+.vision-wrapper {
+  background-position-y: -19.5714px;
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0;
+  background: url("../../../src/images/bg_vision.jpg") center top;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-weight: 300;
+  background-size: cover;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+.vision-wrapper .text-container {
+  text-align: center;
+  padding: 0 10px;
+}
+.vision-wrapper .text-container .font-black {
+  font-size: 30px;
+  margin: 20px 0 30px 0;
+}
+.vision-wrapper .button-style {
+  display: inline-block;
+  padding: 10px 36px;
+  background-color: #cf102d;
+  border-radius: 4px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  border-bottom: 3px solid #ba0d27;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.vision-wrapper .button-style:hover {
+  background-color: #b70e28;
+  border-bottom: 3px solid #a20b22;
+  text-decoration: none;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .vision-wrapper .text-container {
+    padding: 0 121px;
+  }
+}
+
+.contact-wrapper {
+  min-height: 560px;
+  padding: 20px;
+  background: #fff;
+  font-family: "Nunito", sans-serif;
+}
+.contact-wrapper img {
+  vertical-align: middle;
+}
+.contact-wrapper .contact-head {
+  color: #d20c2f;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.contact-wrapper .contact-p-gray {
+  color: #797979;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.contact-wrapper .contact-p-gray a {
+  color: #797979;
+  text-decoration: underline;
+}
+.contact-wrapper .contact-p-black {
+  color: #666;
+  font-size: 13px;
+  font-weight: 300;
+}
+.contact-wrapper .contact-title {
+  color: #666;
+  margin: 10px 0 10px 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+.contact-wrapper .form-control {
+  display: block;
+  width: 100%;
+  height: 24px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.contact-wrapper textarea.form-control {
+  height: auto;
+}
+.contact-wrapper .contact-p-red {
+  color: #ce0f38;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  font-weight: 300;
+}
+.contact-wrapper .form-submit {
+  font-size: 17px;
+  font-weight: 700;
+  float: right;
+}
+.contact-wrapper .button-style-round {
+  display: inline-block;
+  padding: 11px 35px 11px 35px;
+  background-color: #cf102d;
+  border-radius: 100px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  border-bottom: 3px solid #ba0d27;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.contact-wrapper .button-style-round:hover {
+  background-color: #b70e28;
+  border-bottom: 3px solid #a20b22;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-wrapper {
+  background-color: #cf102d;
+  padding: 17px 0;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+.footer-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer-wrapper ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.footer-wrapper ul li a {
+  color: #fff;
+  font-size: 11px;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.bottom-image {
+  min-height: 60px;
+  background: url("../../../src/images/bg_bottom.jpg") center no-repeat;
+  background-size: cover;
+}

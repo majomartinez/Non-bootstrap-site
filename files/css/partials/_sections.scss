@@ -1,0 +1,451 @@
+/* Sessions CSS */
+@import "_vendor";
+@import "_variables";
+
+.hero-wrapper{
+  background: url('../../../src/images/header-bg-only.jpg') top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 556px;
+  overflow: hidden;
+  color: $white;
+
+  .hero-iphone{
+    display: none;
+    position: absolute;
+    left: 166px;
+    top: 120px;
+    width: 221px;
+    height: 403px;
+    background: url('../../../src/images/iphone_main.png') center no-repeat;
+    background-size: 221px 403px;
+
+    .hero-video{
+      position: relative;
+      left: 34px;
+      top: 75px;
+      width: 151px;
+      height: 250px;
+      background: $white;
+    }
+  }
+  .hero-content{
+    margin: 110px 0 0 30px;
+    float: left;
+    position: relative;
+
+    .top-of-title{
+      width: 460px;
+    }
+    .download-buttons-container{
+      margin: 30px 0 0 0;
+      position: relative;
+      text-align: center;
+
+      .button-style {
+        display: inline-block;
+        background-color: #cf102d;
+        border-radius: 4px;
+        text-decoration: none;
+        color: $white;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: $font-family-main;
+        border-bottom: 3px solid #ba0d27;
+        padding: 10px 36px;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .headline{
+      font-weight: 700;
+      margin-top: -30px;
+      font-size: 24px;
+      text-shadow: 2px 2px 1px #333;
+      text-align: center;
+    }
+    .join{
+      font-weight: 300;
+      font-size: 14px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  .players-div{
+    width: 100%;
+    min-height: 255px;
+    margin: 20px 0 0 0;
+    padding: 20px 0 8px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .title-p {
+      color: $white;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $font-family-main;
+      margin: 20px 10px;
+
+      span{
+        color: #b90721;
+      }
+  }
+    .box-div--content{
+      padding: 10px;
+    }
+    .player{
+      width: 335px;
+      height: 170px;
+      margin-left: 8px;
+      margin-right: 8px;
+
+      .video-part{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 170px;
+        z-index: -9999;
+        background-color: #000;
+
+        img{
+          width: 335px;
+          height: 170px;
+          opacity: 0.5;
+        }
+      }
+      .player-portrait{
+        background-image: url('../../../src/images/image-3.png');
+        position: absolute;
+        float: left;
+        left: 17px;
+        top: 107px;
+        display: block;
+        overflow: hidden;
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        border: 1px solid #fff;
+        z-index: 100;
+        background-size: cover;
+      }
+      .player-name {
+        position: absolute;
+        left: 71px;
+        top: 106px;
+        float: left;
+        display: block;
+        overflow: hidden;
+        color: white;
+        z-index: 100;
+        font-size: 14px;
+      }
+    }
+  }
+  @include desktop{
+      .hero-iphone{
+        display: block;
+      }
+      .hero-content{
+        margin: 110px 0 0 475px;
+
+        .join{
+          margin: 0 0 0 25px;
+        }
+      }
+      .players-div{
+        margin: 70px 0 0 0;
+
+        .box-div--content{
+          padding: 0;
+        }
+      }
+  }
+}
+.download-wrapper{
+    font-family: $font-family-main;
+    font-weight: 300;
+    min-height: 40px;
+    background: #000000;
+    color: white;
+    padding: 20px 15px 60px 15px;
+
+    .download-buttons-container{
+      text-align: center;
+      padding: 10px;
+    }
+    .show-talent{
+      font-size: 14px;
+      margin: 10px 0 0 0;
+      text-align: center;
+    }
+    .red-text{
+      color: $font-color-red;
+    }
+    .button-style {
+      display: inline-block;
+      background-color: #cf102d;
+      border-radius: 4px;
+      text-decoration: none;
+      color: $white;
+      font-size: 13px;
+      font-weight: 400;
+      border-bottom: 3px solid #ba0d27;
+      padding: 10px 36px;
+      text-decoration: none;
+      color: #fff;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    @include desktop{
+      padding: 15px 0px;
+
+      .download-buttons-container{
+        padding: 0;
+      }
+    }
+}
+.app-wrapper{
+    width: 100%;
+    overflow: hidden;
+    min-height: 448px;
+    margin: 0 0 30px 0;
+    background: #ffffff;
+    font-weight: 300;
+    font-family: $font-family-main;
+
+    .title-div{
+      text-align: center;
+      padding: 80px 0 0 0;
+    }
+    .title-red {
+      color: #bb072a;
+      font-weight: 300;
+      font-size: 18px;
+    }
+    .title-black {
+      color: #0f0506;
+    }
+    #how-it-works {
+      overflow: hidden;
+      margin: 0 -15px;
+
+      .step{
+        text-align: center;
+      }
+      .img{
+        vertical-align: middle;
+      }
+      .iphone {
+        width: 240px;
+        height: 400px;
+      }
+      .red-dot {
+        color: white;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        display: inline-block;
+        background: $font-color-red;
+        border-radius: 70px;
+       }
+       .span{
+         padding: 10px 0;
+       }
+       .grey{
+         color: #666;
+         padding: 50px;
+         font-size: 14px;
+       }
+       .arrow1, .arrow2 {
+         position: absolute;
+         left: 5px;
+         top: 230px;
+         width: 30px;
+         height: 30px;
+      }
+      .arrow2 {
+        left: 20px;
+      }
+      .iphone-txt{
+        margin: 0 0 0 15px;
+      }
+   }
+
+}
+.vision-wrapper{
+  background-position-y: -19.5714px;
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0;
+  background: url('../../../src/images/bg_vision.jpg') center top;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-weight: 300;
+  background-size: cover;
+  color: white;
+  font-family: $font-family-main;
+
+  .text-container{
+    text-align: center;
+    padding: 0 10px;
+
+    .font-black{
+      font-size: 30px;
+      margin: 20px 0 30px 0;
+    }
+  }
+  .button-style {
+    display: inline-block;
+    padding: 10px 36px;
+    background-color: #cf102d;
+    border-radius: 4px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $white;
+    font-size: 13px;
+    border-bottom: 3px solid #ba0d27;
+    text-decoration: none;
+    color: $white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .button-style:hover {
+    background-color: #b70e28;
+    border-bottom: 3px solid #a20b22;
+    text-decoration: none;
+    color: $white;
+  }
+
+  @include desktop{
+    .text-container{
+      padding: 0 121px;
+    }
+  }
+}
+.contact-wrapper{
+  min-height: 560px;
+  padding: 20px;
+  background: $white;
+  font-family: $font-family-main;
+
+  img{
+    vertical-align: middle;
+  }
+  .contact-head {
+    color: #d20c2f;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+  .contact-p-gray {
+    color: #797979;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+
+    a{
+      color: #797979;
+      text-decoration: underline;
+    }
+  }
+  .contact-p-black {
+    color: #666;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .contact-title{
+    color: #666;
+    margin: 10px 0 10px 0;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 24px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    font-family: $font-family-main;
+    font-weight: 300;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+  textarea.form-control{
+    height: auto;
+  }
+  .contact-p-red{
+    color: #ce0f38;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    font-weight: 300;
+  }
+  .form-submit{
+    font-size: 17px;
+    font-weight: 700;
+    float: right;
+  }
+  .button-style-round {
+    display: inline-block;
+    padding: 11px 35px 11px 35px;
+    background-color: #cf102d;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px solid #ba0d27;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .button-style-round:hover {
+    background-color: #b70e28;
+    border-bottom: 3px solid #a20b22;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.footer-wrapper{
+  background-color: $font-color-red;
+  padding: 17px 0;
+  font-size: 13px;
+  font-family: $font-family-main;
+  font-weight: 300;
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li{
+      display: inline-block;
+      margin: 0 15px;
+
+      a{
+        color: #fff;
+        font-size: 11px;
+        transition: color 0.2s ease;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.bottom-image{
+  min-height: 60px;
+  background: url('../../../src/images/bg_bottom.jpg') center no-repeat;
+  background-size: cover;
+}

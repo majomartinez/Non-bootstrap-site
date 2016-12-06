@@ -1,0 +1,59 @@
+/* Header CSS */
+@import "_vendor";
+@import "_variables";
+
+.header-menu{
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  z-index: 2200;
+  width: 100%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  top: 0;
+  left: 0;
+
+  .logo{
+    display: block;
+    width: 80px;
+    height: 60px;
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+  }
+  .menu-div{
+    float: right;
+
+    .nav{
+      list-style: none;
+      margin-right: 20px;
+      margin-top: 20px;
+
+      li{
+        display: inline-block;
+        padding: 0 24px;
+        font-size: 13px;
+
+        a{
+          color: $white;
+          list-style: none;
+          transition: color 0.5s ease, border 0.2s ease;
+          border-bottom: 0px solid transparent;
+          display: block;
+          text-decoration: none;
+        }
+        a:hover{
+          text-decoration: none;
+          color: #999;
+          list-style: none;
+          border-bottom: 2px solid $font-color-red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.red-bg{
+  background: $font-color-red;
+}

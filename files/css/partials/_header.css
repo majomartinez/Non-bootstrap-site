@@ -1,0 +1,58 @@
+/* Header CSS */
+/*  ***************************
+/*  Media queries
+/*  ---------------------------
+*******************************/
+/* Variable SCSS */
+.header-menu {
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  z-index: 2200;
+  width: 100%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  top: 0;
+  left: 0;
+}
+.header-menu .logo {
+  display: block;
+  width: 80px;
+  height: 60px;
+  background-size: 80px 60px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  transition: opacity 0.5s ease;
+}
+.header-menu .menu-div {
+  float: right;
+}
+.header-menu .menu-div .nav {
+  list-style: none;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.header-menu .menu-div .nav li {
+  display: inline-block;
+  padding: 0 24px;
+  font-size: 13px;
+}
+.header-menu .menu-div .nav li a {
+  color: #fff;
+  list-style: none;
+  transition: color 0.5s ease, border 0.2s ease;
+  border-bottom: 0px solid transparent;
+  display: block;
+  text-decoration: none;
+}
+.header-menu .menu-div .nav li a:hover {
+  text-decoration: none;
+  color: #999;
+  list-style: none;
+  border-bottom: 2px solid #cf102d;
+  text-decoration: none;
+}
+
+.red-bg {
+  background: #cf102d;
+}
